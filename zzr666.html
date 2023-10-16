@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>Java和Mysql常用英文单词，打得越熟，学得越好，同学们，加油！</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+ <style type="text/css">
+	.nei{
+		width:33%;
+		float:left;
+		border: 1px solid gray;
+		height: 600px;
+	}
+	.hengxian{
+		border: 0px solid red;
+		border-bottom:2px solid blue;
+		position: absolute;
+		bottom: 20px;
+		width: 300px;
+		margin-left: -150px;
+		font-size: 30px;
+	}
+	.hengxian:focus{
+		outline:none;
+	}
+	.successspan{
+		background-color: green;
+		color: white;
+	}
+	.errorspan{
+		background-color: red;
+	}
+	.backDiv{
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		opacity: 0.5;
+	}
+	.startBtn{
+		width: 300px;
+		height:100px;
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		margin-left: -150px;
+		margin-top: -50px;
+		background-color: #ff9933;
+		font-size: 50px;
+	}
+	.textDiv{
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		margin-left: -80px;
+		margin-top: -180px;
+		color: #ffccff;
+		font-size: 80px;
+	}
+ </style>
+ <body onload="jiazai()">
+  <div class="wai">
+	<div class="nei"></div>
+	<div class="nei" align="center">
+		<input class="hengxian" placeholder="请输入上面的英文" />
+	</div>
+	<div class="nei nei3" align="right"></div>
+  </div>
+ </body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+</script>
+ <script type="text/javascript">
+	//https://blog.csdn.net/qq_41264674/article/details/80040854
+	var t = {
+		luodiv: null,
+		str: [
+			{"public 公有的":"public"},
+			{"private 私有的":"private"},
+			{"protected 保护的":"protected"},
+			{"class 类, 类型":"class"},
+			{"void 空白, 无返回值":"void"},
+			{"static 静态的":"static"},
+			{"final 最终的":"final"},
+			{"String 字符串":"String"},
+			{"int 整数类型":"int"},
+			{"long 长整型":"long"},
+			{"double 双倍, 双精度浮点数":"double"},
+			{"float 浮动, 浮点数":"float"},
+			{"boolean 布尔类型":"boolean"},
+			{"byte 字节":"byte"},
+			{"bit 位":"bit"},
+			{"Binnary 二进制":"Binnary"},
+			{"short 短的, 16位整数":"short"},
+			{"char 字符, 字符类型":"char"},
+			{"name 姓名":"name"},
+			{"phone 电话":"phone"},
+			{"email 电子邮件":"email"},
+			{"windows 操作系统":"windows"},
+			{"linux 操作系统linux":"linux"},
+			{"JVM (java虚拟机)":"JVM"},
+			{"JRE (java运行环境)":"JRE"},
+			{"JDK (java开发工具包)":"JDK"},
+			{"IDE 集成开发环境":"IDE"},
+			{"path 路径":"path"},
+			{"package 包":"package"},
+			{"class 类，类型":"class"},
+			{"main 主要的":"main"},
+			{"System 系统":"System"},
+			{"out 出":"out"},
+			{"print 打印":"print"},
+			{"println 打印并换行":"println"},
+			{"byte 字节":"byte"},
+			{"short 短的，16位整型":"short"},
+			{"int 整型":"int"},
+			{"long 长整型":"long"},
+			{"float 浮动, 浮点数":"float"},
+			{"double 双倍, 双精度浮点数":"double"},
+			{"boolean 布尔类型":"boolean"},
+			{"char 字符，字符类型":"char"},
+			{"String 字符串":"String"},
+			{"bit 位":"bit"},
+			{"true 真":"true"},
+			{"false 假":"false"},
+			{"import 引入、导入":"import"},
+			{"scanner 扫描器":"scanner"},
+			{"if 如果":"if"},
+			{"else 否则":"else"},
+			{"switch 开关":"switch"},
+			{"case 实例、情况":"case"},
+			{"break 间断、打破":"break"},
+			{"continue 继续":"continue"},
+			{"while 当...的时候":"while"},
+			{"do 做":"do"},
+			{"for 为了、循环方式":"for"},
+			{"length 长度":"length"},
+			{"array 队列、数组":"array"},
+			{"random 随机的":"random"},
+			{"public 公有的":"public"},
+			{"private 私有的":"private"},
+			{"protected 保护的":"protected"},
+			{"static 静态的":"static"},
+			{"void 空白, 无返回值":"void"},
+			{"size 大小":"size"},
+			{"width 宽":"width"},
+			{"height 高":"height"},
+			{"command 命令":"command"},
+			{"result 结果":"result"},
+			{"src 源":"src"},
+			{"input 输入":"input"},
+			{"extends 扩展, 继承":"extends"},
+			{"implements 实现":"implements"},
+			{"Object 对象, 物件":"Object"},
+			{"class 类":"class"},
+			{"null 空":"null"},
+			{"Exception 异常":"Exception"},
+			{"this 这个":"this"},
+			{"super 超级":"super"},
+			{"new 新的、新建":"new"},
+			{"return 返回":"return"},
+			{"default 默认的":"default"},
+			{"equals 相等":"equals"},
+			{"buffer 缓冲":"buffer"},
+			{"builder 构建器":"builder"},
+			{"wait 等待":"wait"},
+			{"File 文件":"File"},
+			{"Error 错误":"Error"},
+			{"Throwable 可抛出的接口":"Throwable"},
+			{"InputStream 输入流":"InputStream"},
+			{"OutputStream 输出流":"OutputStream"},
+			{"read 读取":"read"},
+			{"write 写出":"write"},
+			{"flush 刷新缓存":"flush"},
+			{"Thread 线程":"Thread"},
+			{"Runnable 可运行接口":"Runnable"},
+			{"close 关闭":"close"},
+			{"util 工具包":"util"},
+			{"Scanner 常用语读取控制台输入":"Scanner"},
+			{"Math 数学类":"Math"},
+			{"Random 随机数类":"Random"},
+			{"select 选择":"select"},
+			{"from 从...里":"from"},
+			{"where 哪里，在哪里":"where"},
+			{"insert 插入":"insert"},
+			{"update 更新":"update"},
+			{"delete 删除":"delete"},
+			{"into 进入":"into"},
+			{"table 表格":"table"},
+			{"database 数据库":"database"},
+			{"management 管理":"management"},
+			{"row 行":"row"},
+			{"record 记录":"record"},
+			{"column 列":"column"},
+			{"field 字段":"field"},
+			{"query 查询":"query"},
+			{"default 默认":"default"},
+			{"unique 唯一":"unique"},
+			{"constraint 约束":"constraint"},
+			{"definition 定义":"definition"},
+			{"references 参照，引用":"references"},
+			{"foreign 外部":"foreign"},
+			{"primary 主要":"primary"},
+			{"modify 修改":"modify"},
+			{"commit 提交":"commit"},
+			{"rollback 回滚":"rollback"},
+			{"manager 管理者":"manager"},
+			{"union 联合":"union 联合"},
+			{"view 视图":"view"},
+			{"grant 授予":"grant"},
+			{"cache 缓存":"cache"},
+			{"auto 自动":"auto"},
+			{"increment 增长":"increment"},
+			{"current 当前，现在":"current"},
+			{"execute 执行":"execute"},
+			{"statement 语句":"statement"},
+			{"resultset 结果集":"resultset"},
+			{"Idle 空闲的，懒散的":"Idle"},
+			{"injection 注射":"injection"}
+		],
+		shus: [],
+		newstrs: function(){
+			//console.info( t.str.length );
+			var length = t.str.length;
+			t.shus = [];
+			for(var i=0;i<length;i++){
+				do
+				{
+					var bj = false;
+					var s = Math.floor(Math.random()*length);
+					for(var j=0;j<t.shus.length;j++){
+						if(s == t.shus[j]){
+							bj = true;
+							break;
+						}
+					}
+					if(!bj){
+						t.shus.push(s);
+					}
+				}
+				while (bj);
+			}
+			return t.shus;
+		},
+		getJsonKey: function(v){
+			var k = null;
+			for(key in t.str[v]){
+				k = key;
+			}
+			return k;
+		},
+		getJsonValue: function(v){
+			var value = null;
+			for(key in t.str[v]){
+				value = t.str[v][key];
+			}
+			return value;
+		},
+		desctime: function(){
+			var a=0;
+		},
+		luo: function(index){
+			if(t.luodiv != null){
+				document.getElementsByClassName("nei")[1].removeChild(t.luodiv);
+			}
+			var key = t.getJsonKey(index);
+			t.luodiv = document.createElement("div");
+			document.getElementsByClassName("nei")[1].appendChild(t.luodiv);
+			t.luodiv.innerHTML = key;
+			t.luodiv.style.fontSize = "25px";
+			t.luodiv.style.marginTop = "10px";
+			$(t.luodiv).delay(2000);
+			$(t.luodiv).animate({"margin-top":"500px"},5000,function(){
+				var jsonValue = t.getJsonValue(index);
+				var div1s = $(".nei:first").find("div");
+				var div2s = $(".nei:last").find("div");
+				var bbjj = false;//假设没有
+				for(var i=0;i<div1s.length;i++){
+					if(jsonValue == div1s[i].innerHTML){
+						bbjj = true;
+						break;
+					}
+				}
+				for(var i=0;i<div2s.length;i++){
+					if(jsonValue == div2s[i].innerHTML){
+						bbjj = true;
+						break;
+					}
+				}
+				if(bbjj == false){
+					//t.insertError(index);
+					panduan(t.shus);
+				}
+				//时间到添加到错误处
+			});
+		},
+		startBtn:null,
+		start: function(index){
+			var backDiv = document.createElement("div");
+			backDiv.className = "backDiv";
+			document.body.appendChild(backDiv);
+			t.startBtn = document.createElement("button");
+			t.startBtn.className = "startBtn";
+			t.startBtn.innerHTML = "点击开始";
+			t.startBtn.onclick = function(){
+				document.body.removeChild(this);
+				document.body.removeChild(backDiv);
+				document.getElementsByClassName("hengxian")[0].focus();
+				t.luo(index);//开始下落
+			}
+			document.body.appendChild(t.startBtn);
+		},
+		end: function(index){
+			var backDiv = document.createElement("div");
+			backDiv.className = "backDiv";
+			document.body.appendChild(backDiv);
+			var textDiv = document.createElement("div");
+			textDiv.className = "textDiv";
+			textDiv.innerHTML = "结束";
+			document.body.appendChild(textDiv);
+			var btn = document.createElement("button");
+			btn.className = "startBtn";
+			btn.innerHTML = "重新开始";
+			document.getElementsByClassName("hengxian")[0].blur();
+			btn.onclick = function(){
+				document.body.removeChild(this);
+				document.body.removeChild(backDiv);
+				document.body.removeChild(textDiv);
+				document.getElementsByClassName("nei")[0].innerHTML = "";
+				document.getElementsByClassName("nei")[2].innerHTML = "";
+				document.getElementsByClassName("hengxian")[0].focus();
+				t.luo(index);//开始下落
+			}
+			document.body.appendChild(btn);
+		},
+		insertError: function(index){
+			var value = t.getJsonValue(index);
+			//console.info(value);
+			var span = document.createElement("div");
+			span.innerHTML = value;
+			span.style.margin="5px";
+			span.style.float = "left";
+			span.style.fontSize = "25px";
+			span.className = "errorspan"
+			document.getElementsByClassName("nei")[0].appendChild(span);
+		}
+	}
+	var ge = 0;
+	function jiazai(){
+		var shus = t.newstrs();
+		t.start(shus[ge]);
+		document.getElementsByClassName("hengxian")[0].onkeyup = function(e){
+			if(e.keyCode == 13){
+				panduan(shus);
+			}
+		}
+	}
+	function panduan(shus){
+		var value = document.getElementsByClassName("hengxian")[0].value;
+		document.getElementsByClassName("hengxian")[0].value = "";
+		var jsonValue = t.getJsonValue(shus[ge]);
+		var span = document.createElement("div");
+		span.innerHTML = jsonValue;
+		span.style.margin="5px";
+		span.style.float = "left";
+		span.style.fontSize = "25px";
+		//var hr1 = document.createElement("hr");
+		if(value ==  jsonValue){
+			span.className = "successspan"
+			document.getElementsByClassName("nei")[2].appendChild(span);
+			//document.getElementsByClassName("nei")[2].appendChild(hr1);
+		}else{
+			span.className = "errorspan"
+			document.getElementsByClassName("nei")[0].appendChild(span);
+			//document.getElementsByClassName("nei")[0].appendChild(hr1);
+		}
+		if(ge >= (shus.length-1)){
+			ge=0;
+			t.end(shus[ge]);
+			return;
+		}
+		ge++;
+		t.luo(shus[ge]);
+	}
+ </script>
+</html>
